@@ -10,11 +10,11 @@ import { Box } from '@mui/material';
 
 export default function InfoBox({ info }) {
   let COLD_URL =
-    "https://www.findingtheuniverse.com/wp-content/uploads/2017/01/Blue2Bhour2BFinland_by_Laurence2BNorah.jpg";
+    "/Cold_image.jpg";
   let HOT_URL =
-    "https://images.unsplash.com/photo-1504370805625-d32c54b16100?q=80&w=1632&auto=format&fit=crop";
+    "/Hot_image.avif";
   let RAIN_URL =
-    "https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20";
+    "/Rain_Image.jpg";
 
   return (
     <div className="cardContainer">
@@ -61,7 +61,7 @@ export default function InfoBox({ info }) {
               🌡️ <b>Temperature:</b> {info.temp}&deg;C
             </Typography>
             <Typography variant="body1">
-              💧 <b>Humidity:</b> {info.humidity}%
+              💧 <b>Humidity:</b> {info.humidity}
             </Typography>
             <Typography variant="body1">
               🔽 <b>Min Temp:</b> {info.tempMin}&deg;C
